@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minmum-scale=1,maxmum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>仿旅行网实战</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <ul id="menu" class="item-list open">
+        <div class="nav-bg"></div>
+        <div class="nav-box">
+            <div class="logo"></div>
+            <div class="item-list-box">
+                <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+                <li data-menuanchor="page2"><a href="#page2">产品服务</a></li>
+                <li data-menuanchor="page3"><a href="#page3">解决方案</a></li>
+                <li data-menuanchor="page4"><a href="#page4">下载</a></li>
+                <li data-menuanchor="page5"><a href="#page5">关于我们</a></li>
+            </div>
+            <div class="Login">
+                <a href="JavaScript:;" id="onpen-login">登录</a>
+                <a href="JavaScript:;">申请企业注册</a>
+            </div>
+        </div>
+        </div>
+        <img src="./img/circle.png" class="list-btn">
+    </ul>
+    <!-- 登录弹框 -->
+    <div class="login-bg"></div>
+    <div class="login-box">
+        <img src="./img/login-public/close1.png" class="login-close">
+        <div class="login-title">企业商旅会员登录</div>
+        <!-- <div class="login-body"></div> 提示用户错误的功能模块 -->
+        <input class="login-border login-part1" type="text" id="user" placeholder="您的手机号" maxlength="11">
+        <img class="user-close" src="./img/login-public/close2.png" alt="">
+        <img class="user-bg" src="./img/login-public/user.png" width="17" height="17">
+        <input class="login-border login-part1" type="password" id="pwd" placeholder="您的密码" maxlength="20">
+        <img class="pwd-close" src="./img/login-public/close2.png" alt="">
+        <img class="pwd-bg" src="./img/login-public/pwd.png" width="15" height="21">
+        <!-- <div class="code-box"></div>验证码 -->
+        <div class="pwd-text">
+            <label>
+                <input type="checkbox" id="saveUser">记住账号
+            </label>
+            <a href="JavaScript:;">忘记密码？</a>
+        </div>
+        <a href="javascript:;" class="login-border login-part2 login-active" id="loginBtn">立即登录</a>
+        <a href="javascript:;" class="login-border login-part2">申请企业注册</a>
+    </div>
+    <div class="header">
+        <!-- 第一屏 -->
+        <div class="section oneA">
+            <div class="box">
+                <img src="./img/words-8.png" amt="animated fadeInDown" class="animated fadeInDown">
+                <p>
+                    <span amt="animated fadeInLeft" class="animated fadeInLeft">_______________</span>
+                    <span amt="animated fadeInUp" class="animated fadeInUp">您身边的差旅管家！</span>
+                    <span amt="animated fadeInRight" class="animated fadeInRight">_______________</span>
+                </p>
+                <div>
+                    <a href="JavaScript:;" amt="animated fadeInLeft" class="animated fadeInLeft">登录</a>
+                    <a href="JavaScript:;" amt="animated fadeInRight" class="animated fadeInRight">申请企业注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 第二屏 -->
+        <div class="section oneB">
+            <div amt="animated fadeInRight" class="ads-box">
+                <a href="JavaScript:;" class="Clike-left"><img src="./img/left.png"></a>
+                <a href="JavaScript:;" class="Clike-right"><img src="./img/right.png"></a>
+                <div class="middle">
+                    <div class="ads-body">
+                        <div class="ads-item">
+                            <img src="./img/Pull/ticket.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">机票</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">与全国各大航空公司官网直连。机票基本覆盖国内、国际所有航线，是国内少数几家拥有国际廉价航空资源的平台</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">熟悉竞价规则，商旅无忧系统内置的云搜索比价引擎，价格优势。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">协助企业与各航空公司签订大客户协议，优惠力度达10%-15%。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">4</span>
+                                        <span class="ads-item-text-right">强大的后台数据梳理能力，优先推荐各航空公司特价机票，提供多航段机票组合方案</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">5</span>
+                                        <span class="ads-item-text-right">优质出行服务，全国主要城市提供机场贵宾休息及快速安检通道等服务</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/jiudian.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">酒店</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">酒店类型覆盖全，含经济型、舒适型、高档型及豪华型等</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">协议酒店已超过1万家，整合国内酒店超过20万家，国际酒店超过200多个国家20余万家；为企业推荐更为合适的住宿方案。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">酒店比价系统保证价格优势，房态控制系统保证房源真实。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">4</span>
+                                        <span class="ads-item-text-right">提供酒店定制化服务（如无钥匙入住、专属欢迎果盘）</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">5</span>
+                                        <span class="ads-item-text-right">协助企业针对住宿需求较大的时间段，向酒店争取更优惠的价格</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/huoche.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">火车</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">线上改签：铁道部直属代理人，保障座位准确性。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">增值服务：送票上门，抢票等增值服务。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/taxi.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">用车</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">6分钟用车计划：商旅无忧与第三方用车公司（易到，神州，一嗨等）共同制定了一套优质完善的用车方案，确保客户在6分钟内能用车。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">覆盖全：用车服务网点遍布全国50余个城市，完善的服务网络保障了客户的用车需求。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">专属优惠：通过商旅无忧线上预定用车服务，系统将不定期推送专属折扣券和现金抵用券。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/travel.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">旅游度假</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">无忧省心：制定符合企业需求的员工旅游计划，线上一键提交需求，线下定制团队迅速响应，为您提供最优线路和价格方案，流程简单省心。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">无忧匠心：我们拥有专业的定制团队和丰富优质的旅游资源，秉持精益求精的“工匠精神”，满足您的个性化需求！</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">无忧安心：我们提供一站式贴心服务（行前、行中、行后），保障品质，合规管理，旅途更安心！</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">4</span>
+                                        <span class="ads-item-text-right">包机业务：专业包机业务部，提供包机旅游服务</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/guibinting.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">贵宾厅</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">现已基本形成覆盖全国的服务网络，辐射华东、华南、华北、华中、东北、西南等地区。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">厅内为旅客提供咖啡/茶水、无线上网、媒体欣赏、报刊阅览、代办登机牌、登机提醒等服务，使旅客利用极短的时间多方位享受全新的候机、候车体验。</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">从机场/高铁站的停车场至登机口的全程引领、代办登机牌、VIP安检通道、行李协助、贵宾休息等机场地面服务。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/meeting.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">会议会展</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">会议：丰富的场地资源，全国300多个城市6万多个会场，针对企业会议目的，推荐预定专业场地（例如，公司研讨会）</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">奖励旅游：针对企业客户提供专属旅行方案及服务</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">大型企业会议：大型会议提供活动整体策划方案、会务执行等一站式服务。专业策划团队，全程标准化流程管理控制（例如，年会，颁奖典礼）</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">4</span>
+                                        <span class="ads-item-text-right">活动：企业活动策划方案、搭建、物料（例如庆典、展会）</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-item">
+                            <img src="./img/Pull/baoxian.jpg">
+                            <div class="ads-item-body">
+                                <div class="ads-title">保险</div>
+                                <div class="ads-border"></div>
+                                <div class="ads-content">
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">1</span>
+                                        <span class="ads-item-text-right">专业：与保险公司直接合作，提供航空意外险，退票险，延误险，境外险等产品</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">2</span>
+                                        <span class="ads-item-text-right">用心：一分钟快递出单，随时退保</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">3</span>
+                                        <span class="ads-item-text-right">放心：支持官网验真，提供报销凭证</span>
+                                    </div>
+                                    <div class="ads-item-text">
+                                        <span class="ads-item-text-left">4</span>
+                                        <span class="ads-item-text-right">贴心：全程协助理赔，专属客服服务</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第三屏 -->
+        <div class="section oneC">
+            <div class="model-slide">
+                <div class="model-slide-box">
+                    <div class="model-slide-item item1"></div>
+                    <div class="model-slide-item item2"></div>
+                    <div class="model-slide-item item3"></div>
+                </div>
+            </div>
+            <div class="model-bg"></div>
+            <div class="model-box">
+                <div amt="animated fadeInDown" class="m-title">
+                    <img src="./img/model-box/solution-big-1.png">
+                    <span>成本解决</span>
+                </div>
+                <div amt="animated fadeInLeft" class="m-box-body">
+                    <span class="content-left">1</span>
+                    <span class="content-right">协助企业制定与经营目标匹配的差旅预算，通过大数据管理来降低支出，并利用合理性审查降低费用</span>
+                </div>
+                <div amt="animated fadeInRight" class="m-box-body active">
+                    <span class="content-left">2</span>
+                    <span class="content-right">定制简要透明的差旅费政策，有选择性进行集中采购、提前采购、择优采购，降低单次采购成本，并利用金融服务降低资金成本</span>
+                </div>
+                <div class="m-b-btn">
+                    <div amt="animated fadeInUp" class="toggle-box active" id="one">
+                        <img src="./img/model-box/solution-1.png">
+                        <span>成本解决</span>
+                    </div>
+                    <div amt="animated fadeInUp" class="toggle-box" id="two">
+                        <img src="./img/model-box/solution-2.png">
+                        <span>服务解决</span>
+                    </div>
+                    <div amt="animated fadeInUp" class="toggle-box last" id="last">
+                        <img src="./img/model-box/solution-3.png">
+                        <span>效率解决</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第四屏 -->
+        <div class="section oneD">
+            <div class="download-box">
+                <div amt="animated fadeInLeft" class="dl-box-l">
+                    <span><img src="./img/elephant.png">差客e族</span>
+                    <p></p>
+                    <div class="box-app">
+                        <img src="./img/e-picture.png">
+                        <div>
+                            <a href="JavaScript:;"><img src="./img/ios.png">iphone</a>
+                            <a href="JavaScript:;"><img src="./img/android.png">android</a>
+                        </div>
+                    </div>
+                </div>
+                <div amt="animated fadeInRight"  class="dl-box-r">
+                </div>
+            </div>
+        </div>
+        <!-- 第五屏 -->
+        <div class="section oneE">
+            <div class="footer-container">
+                <div amt="animated slideInLeft" class="left-box fl">
+                    <div class="super-top">
+                        <div class="address">
+                                <span>四川商旅无忧科技服务有限公司</span>
+                                <p>成都市高新区天府大道北段1700号<br>
+                                    环球中心E3-1栋16楼</p>
+                        </div>
+                        <div><img src="./img/map-mark.png"></div>
+                        <img src="./img/public/map1.png" class="gray">
+                    </div>
+                    <div class="super-b">
+                        <div class="fl"><img src="./img/public/hero3.jpg" class="gray"></div>
+                        <div class="fl"><img src="./img/public/display.jpg" class="gray"></div>
+                    </div>
+                </div>
+                <div amt="animated fadeInRight" class="right-box">
+                    <div>
+                        <img src="./img/public/s4.jpg" class="gray">
+                        <h4>商旅无忧</h4>
+                        <p>通过商旅无忧线上预定用车服务，系统将不定期推送专属折扣券和现金抵用券。更多功能内容敬请期待......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lb-t"></div>
+            <div amt="animated fadeInUp" class="lb-b">
+                <div class="cp">
+                    <a href="JavaScript:;">友情链接：</a>
+                    <a href="JavaScript:;">中国国际航空</a>
+                    <a href="JavaScript:;">中国南方航空</a>
+                    <a href="JavaScript:;">中国东方航空</a>
+                    <a href="JavaScript:;">中国海南航空</a>
+                    <span class="copyright">
+                        <span class="line">|</span>
+                        客服电话：028-68382888
+                    </span>
+                </div>
+                <div class="footer">
+                    Copyright2016 四川商旅无忧科技服务有限公司版权所有 蜀ICP备 16018767号-1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
